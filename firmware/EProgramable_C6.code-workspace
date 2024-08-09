@@ -20,6 +20,12 @@
         },
         {
             "path": "projects/guia1_ej2"
+        },
+        {
+            "path": "projects"
+        },
+        {
+            "path": "projects/guia1_ej3"
         }
     ],
     "settings": {
