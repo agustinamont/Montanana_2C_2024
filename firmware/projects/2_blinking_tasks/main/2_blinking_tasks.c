@@ -34,10 +34,10 @@ static void Led1Task(void *pvParameter){
     while(true){
         printf("LED_1 ON\n");
         LedOn(LED_1);
-        vTaskDelay(CONFIG_BLINK_PERIOD_LED_1 / portTICK_PERIOD_MS);
+        vTaskDelay(CONFIG_PERIOD_LED_1 / portTICK_PERIOD_MS);
         printf("LED_1 OFF\n");
         LedOff(LED_1);
-        vTaskDelay(CONFIG_BLINK_PERIOD_LED_1 / portTICK_PERIOD_MS);
+        vTaskDelay(CONFIG_PERIOD_LED_1 / portTICK_PERIOD_MS);
     }
 }
 

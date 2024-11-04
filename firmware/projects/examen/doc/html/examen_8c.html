@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Examen: Referencia del archivo C:/Repositorios/Montanana_2C_2024/firmware/projects/examen/main/examen.c</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Proyecto Examen<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('examen_8c.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo examen.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;freertos/FreeRTOS.h&quot;</code><br />
+<code>#include &quot;freertos/task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hc__sr04_8h_source.html">hc_sr04.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gpio__mcu_8h_source.html">gpio_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="buzzer_8h_source.html">buzzer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uart__mcu_8h_source.html">uart_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="analog__io__mcu_8h_source.html">analog_io_mcu.h</a>&quot;</code><br />
+</div>
+<p><a href="examen_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:ab297d2a615b22e13a678a5b289b0e442" id="r_ab297d2a615b22e13a678a5b289b0e442"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab297d2a615b22e13a678a5b289b0e442">CONFIG_PERIOD_500</a>&#160;&#160;&#160;500</td></tr>
+<tr class="memdesc:ab297d2a615b22e13a678a5b289b0e442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Período de refresco para la lectura del sensor (en milisegundos).  <br /></td></tr>
+<tr class="separator:ab297d2a615b22e13a678a5b289b0e442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3479cb7de8942e41959c1650a2cbd16b" id="r_a3479cb7de8942e41959c1650a2cbd16b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3479cb7de8942e41959c1650a2cbd16b">CONFIG_PERIOD_1000</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memdesc:a3479cb7de8942e41959c1650a2cbd16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Período de refresco para el control de LEDs (en milisegundos).  <br /></td></tr>
+<tr class="separator:a3479cb7de8942e41959c1650a2cbd16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b338c34c953ad53a562a7115b7cbeb8" id="r_a3b338c34c953ad53a562a7115b7cbeb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b338c34c953ad53a562a7115b7cbeb8">REFRESCO_SEND_DATA</a>&#160;&#160;&#160;500</td></tr>
+<tr class="memdesc:a3b338c34c953ad53a562a7115b7cbeb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Período de refresco para el temporizador (en milisegundos).  <br /></td></tr>
+<tr class="separator:a3b338c34c953ad53a562a7115b7cbeb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ab215426d11f9d7eab4cc5b1de94c52b6" id="r_ab215426d11f9d7eab4cc5b1de94c52b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab215426d11f9d7eab4cc5b1de94c52b6">FuncTimerSendData</a> (void *param)</td></tr>
+<tr class="memdesc:ab215426d11f9d7eab4cc5b1de94c52b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador de interrupción del Temporizador. Activa las tareas de conversión ADC y envío de datos.  <br /></td></tr>
+<tr class="separator:ab215426d11f9d7eab4cc5b1de94c52b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630544a7f0a2cc40d8a7fefab7e2fe70" id="r_a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main</a> (void)</td></tr>
+<tr class="memdesc:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Punto de entrada principal de la aplicación. Inicializa los periféricos y comienza las tareas.  <br /></td></tr>
+<tr class="separator:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:adb1e0964a051c97ec5c07a247e97b60c" id="r_adb1e0964a051c97ec5c07a247e97b60c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb1e0964a051c97ec5c07a247e97b60c">activar</a> = true</td></tr>
+<tr class="memdesc:adb1e0964a051c97ec5c07a247e97b60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable auxiliar para activar o desactivar la medición y el control de LEDs.  <br /></td></tr>
+<tr class="separator:adb1e0964a051c97ec5c07a247e97b60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a959357aa23f6faa63b3c88eff65e01" id="r_a0a959357aa23f6faa63b3c88eff65e01"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a959357aa23f6faa63b3c88eff65e01">distancia</a> = 0.00</td></tr>
+<tr class="memdesc:a0a959357aa23f6faa63b3c88eff65e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena la distancia medida por el sensor en centímetros.  <br /></td></tr>
+<tr class="separator:a0a959357aa23f6faa63b3c88eff65e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c5263d684cf1f0d3c8336b046b145c" id="r_a97c5263d684cf1f0d3c8336b046b145c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97c5263d684cf1f0d3c8336b046b145c">value1</a> = 0</td></tr>
+<tr class="memdesc:a97c5263d684cf1f0d3c8336b046b145c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable para almacenar el resultado de la conversión ADC.  <br /></td></tr>
+<tr class="separator:a97c5263d684cf1f0d3c8336b046b145c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe592f0562edab9b3112095ff8f55d30" id="r_afe592f0562edab9b3112095ff8f55d30"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe592f0562edab9b3112095ff8f55d30">value2</a> = 0</td></tr>
+<tr class="memdesc:afe592f0562edab9b3112095ff8f55d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable para almacenar el resultado de la conversión ADC.  <br /></td></tr>
+<tr class="separator:afe592f0562edab9b3112095ff8f55d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510d4a82de34f7d1e8a58deec24fd168" id="r_a510d4a82de34f7d1e8a58deec24fd168"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a510d4a82de34f7d1e8a58deec24fd168">value3</a> = 0</td></tr>
+<tr class="memdesc:a510d4a82de34f7d1e8a58deec24fd168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable para almacenar el resultado de la conversión ADC.  <br /></td></tr>
+<tr class="separator:a510d4a82de34f7d1e8a58deec24fd168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd143217ea94534c33c35e60c7f40474" id="r_afd143217ea94534c33c35e60c7f40474"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd143217ea94534c33c35e60c7f40474">sensar_task_handle</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memdesc:afd143217ea94534c33c35e60c7f40474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle para la tarea de sensado de distancia.  <br /></td></tr>
+<tr class="separator:afd143217ea94534c33c35e60c7f40474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23fa2e6a8b0cbaf464c822d101153441" id="r_a23fa2e6a8b0cbaf464c822d101153441"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23fa2e6a8b0cbaf464c822d101153441">leds_task_handle</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memdesc:a23fa2e6a8b0cbaf464c822d101153441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle para la tarea de control de LEDs.  <br /></td></tr>
+<tr class="separator:a23fa2e6a8b0cbaf464c822d101153441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b27aca8b24fa1d15798298623792f6b" id="r_a5b27aca8b24fa1d15798298623792f6b"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b27aca8b24fa1d15798298623792f6b">send_data_task_handle</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memdesc:a5b27aca8b24fa1d15798298623792f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador de la tarea de FreeRTOS encargada de enviar los datos leídos por el ADC a través de UART.  <br /></td></tr>
+<tr class="separator:a5b27aca8b24fa1d15798298623792f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20a2b7ef852cd2022de5f2ed8453fe9" id="r_ad20a2b7ef852cd2022de5f2ed8453fe9"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad20a2b7ef852cd2022de5f2ed8453fe9">adc_conversion_task_handle</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memdesc:ad20a2b7ef852cd2022de5f2ed8453fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador de la tarea de FreeRTOS encargada de realizar la conversión del ADC.  <br /></td></tr>
+<tr class="separator:ad20a2b7ef852cd2022de5f2ed8453fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de «define»</h2>
+<a id="a3479cb7de8942e41959c1650a2cbd16b" name="a3479cb7de8942e41959c1650a2cbd16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3479cb7de8942e41959c1650a2cbd16b">&#9670;&#160;</a></span>CONFIG_PERIOD_1000</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONFIG_PERIOD_1000&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Período de refresco para el control de LEDs (en milisegundos). </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00042">42</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+</div>
+</div>
+<a id="ab297d2a615b22e13a678a5b289b0e442" name="ab297d2a615b22e13a678a5b289b0e442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab297d2a615b22e13a678a5b289b0e442">&#9670;&#160;</a></span>CONFIG_PERIOD_500</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONFIG_PERIOD_500&#160;&#160;&#160;500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Período de refresco para la lectura del sensor (en milisegundos). </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00040">40</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+</div>
+</div>
+<a id="a3b338c34c953ad53a562a7115b7cbeb8" name="a3b338c34c953ad53a562a7115b7cbeb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b338c34c953ad53a562a7115b7cbeb8">&#9670;&#160;</a></span>REFRESCO_SEND_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REFRESCO_SEND_DATA&#160;&#160;&#160;500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Período de refresco para el temporizador (en milisegundos). </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00044">44</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="examen_8c_source.html#l00193">app_main()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones</h2>
+<a id="a630544a7f0a2cc40d8a7fefab7e2fe70" name="a630544a7f0a2cc40d8a7fefab7e2fe70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630544a7f0a2cc40d8a7fefab7e2fe70">&#9670;&#160;</a></span>app_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void app_main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Punto de entrada principal de la aplicación. Inicializa los periféricos y comienza las tareas. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00193">193</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="examen_8c_source.html#l00064">adc_conversion_task_handle</a>, <a class="el" href="analog__io__mcu_8h_source.html#l00038">ADC_SINGLE</a>, <a class="el" href="analog__io__mcu_8c_source.html#l00045">AnalogInputInit()</a>, <a class="el" href="buzzer_8c_source.html#l00043">BuzzerInit()</a>, <a class="el" href="examen_8c_source.html#l00071">FuncTimerSendData()</a>, <a class="el" href="gpio__mcu_8h_source.html#l00052">GPIO_0</a>, <a class="el" href="gpio__mcu_8h_source.html#l00054">GPIO_2</a>, <a class="el" href="gpio__mcu_8h_source.html#l00072">GPIO_20</a>, <a class="el" href="gpio__mcu_8h_source.html#l00073">GPIO_21</a>, <a class="el" href="gpio__mcu_8h_source.html#l00074">GPIO_22</a>, <a class="el" href="gpio__mcu_8h_source.html#l00055">GPIO_3</a>, <a class="el" href="gpio__mcu_8h_source.html#l00043">GPIO_INPUT</a>, <a class="el" href="gpio__mcu_8h_source.html#l00044">GPIO_OUTPUT</a>, <a class="el" href="gpio__mcu_8c_source.html#l00067">GPIOInit()</a>, <a class="el" href="hc__sr04_8c_source.html#l00034">HcSr04Init()</a>, <a class="el" href="examen_8c_source.html#l00060">leds_task_handle</a>, <a class="el" href="led_8c_source.html#l00031">LedsInit()</a>, <a class="el" href="ili9341_8c_source.html#l00019">NULL</a>, <a class="el" href="examen_8c_source.html#l00044">REFRESCO_SEND_DATA</a>, <a class="el" href="examen_8c_source.html#l00062">send_data_task_handle</a>, <a class="el" href="examen_8c_source.html#l00058">sensar_task_handle</a>, <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>, <a class="el" href="uart__mcu_8h_source.html#l00033">UART_CONNECTOR</a> y <a class="el" href="uart__mcu_8c_source.html#l00107">UartInit()</a>.</p>
+
+</div>
+</div>
+<a id="ab215426d11f9d7eab4cc5b1de94c52b6" name="ab215426d11f9d7eab4cc5b1de94c52b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab215426d11f9d7eab4cc5b1de94c52b6">&#9670;&#160;</a></span>FuncTimerSendData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FuncTimerSendData </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Manejador de interrupción del Temporizador. Activa las tareas de conversión ADC y envío de datos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param</td><td>No se usa. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00071">71</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="examen_8c_source.html#l00064">adc_conversion_task_handle</a> y <a class="el" href="examen_8c_source.html#l00062">send_data_task_handle</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="examen_8c_source.html#l00193">app_main()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="adb1e0964a051c97ec5c07a247e97b60c" name="adb1e0964a051c97ec5c07a247e97b60c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb1e0964a051c97ec5c07a247e97b60c">&#9670;&#160;</a></span>activar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool activar = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable auxiliar para activar o desactivar la medición y el control de LEDs. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00046">46</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+</div>
+</div>
+<a id="ad20a2b7ef852cd2022de5f2ed8453fe9" name="ad20a2b7ef852cd2022de5f2ed8453fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20a2b7ef852cd2022de5f2ed8453fe9">&#9670;&#160;</a></span>adc_conversion_task_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t adc_conversion_task_handle = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Manejador de la tarea de FreeRTOS encargada de realizar la conversión del ADC. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00064">64</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="examen_8c_source.html#l00193">app_main()</a> y <a class="el" href="examen_8c_source.html#l00071">FuncTimerSendData()</a>.</p>
+
+</div>
+</div>
+<a id="a0a959357aa23f6faa63b3c88eff65e01" name="a0a959357aa23f6faa63b3c88eff65e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a959357aa23f6faa63b3c88eff65e01">&#9670;&#160;</a></span>distancia</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float distancia = 0.00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Almacena la distancia medida por el sensor en centímetros. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00048">48</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+</div>
+</div>
+<a id="a23fa2e6a8b0cbaf464c822d101153441" name="a23fa2e6a8b0cbaf464c822d101153441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23fa2e6a8b0cbaf464c822d101153441">&#9670;&#160;</a></span>leds_task_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t leds_task_handle = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle para la tarea de control de LEDs. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00060">60</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="examen_8c_source.html#l00193">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a5b27aca8b24fa1d15798298623792f6b" name="a5b27aca8b24fa1d15798298623792f6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b27aca8b24fa1d15798298623792f6b">&#9670;&#160;</a></span>send_data_task_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t send_data_task_handle = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Manejador de la tarea de FreeRTOS encargada de enviar los datos leídos por el ADC a través de UART. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00062">62</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="examen_8c_source.html#l00193">app_main()</a> y <a class="el" href="examen_8c_source.html#l00071">FuncTimerSendData()</a>.</p>
+
+</div>
+</div>
+<a id="afd143217ea94534c33c35e60c7f40474" name="afd143217ea94534c33c35e60c7f40474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd143217ea94534c33c35e60c7f40474">&#9670;&#160;</a></span>sensar_task_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t sensar_task_handle = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle para la tarea de sensado de distancia. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00058">58</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="examen_8c_source.html#l00193">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a97c5263d684cf1f0d3c8336b046b145c" name="a97c5263d684cf1f0d3c8336b046b145c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c5263d684cf1f0d3c8336b046b145c">&#9670;&#160;</a></span>value1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t value1 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable para almacenar el resultado de la conversión ADC. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00051">51</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+</div>
+</div>
+<a id="afe592f0562edab9b3112095ff8f55d30" name="afe592f0562edab9b3112095ff8f55d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe592f0562edab9b3112095ff8f55d30">&#9670;&#160;</a></span>value2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t value2 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable para almacenar el resultado de la conversión ADC. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00053">53</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+</div>
+</div>
+<a id="a510d4a82de34f7d1e8a58deec24fd168" name="a510d4a82de34f7d1e8a58deec24fd168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a510d4a82de34f7d1e8a58deec24fd168">&#9670;&#160;</a></span>value3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t value3 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable para almacenar el resultado de la conversión ADC. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="examen_8c_source.html#l00055">55</a> del archivo <a class="el" href="examen_8c_source.html">examen.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a class="el" href="dir_429d80758da54da73083af4edd40d0b3.html">projects</a></li><li class="navelem"><a class="el" href="dir_268187ed9a71f0eda58f84b41654e92c.html">examen</a></li><li class="navelem"><a class="el" href="dir_a5361ca27c53f3c9a3e2f8fa9b1a66f2.html">main</a></li><li class="navelem"><a class="el" href="examen_8c.html">examen.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
