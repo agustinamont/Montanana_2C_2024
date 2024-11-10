@@ -19,34 +19,10 @@
             "path": "./projects/x_template"
         },
         {
-            "path": "projects/guia1_ej2"
-        },
-        {
             "path": "projects"
         },
         {
-            "path": "projects/guia1_ej3"
-        },
-        {
-            "path": "projects/guia1_ej4"
-        },
-        {
-            "path": "projects/guia1_ej5"
-        },
-        {
-            "path": "projects/guia1_ej6"
-        },
-        {
-            "path": "projects/guia2_ej1"
-        },
-        {
-            "path": "projects/guia2_ej2"
-        },
-        {
-            "path": "projects/guia2_ej3"
-        },
-        {
-            "path": "projects/guia2_ej4"
+            "path": "projects/examen"
         }
     ],
     "settings": {
