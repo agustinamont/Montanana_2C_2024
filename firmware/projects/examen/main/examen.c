@@ -1,18 +1,33 @@
-/*! @mainpage Template
+/*! @mainpage Examen
  *
  * @section genDesc General Description
  *
- * This section describes how the program works.
+ * Este codigo es una aplicación de alerta para ciclistas utilizando la ESP-EDU. El sistema está compuesto 
+ * por un acelerómetro analógico y un sensor HC-SR04. Genera una alarma luminica a través de LEDs y una 
+ * alarma sonora a través de un buzzer. Además, envia mensajes mediante la UART.
  *
  * <a href="https://drive.google.com/...">Operation Example</a>
  *
  * @section hardConn Hardware Connection
  *
- * |    Peripheral  |   ESP32   	|
+ * |    HC-SR04     |   ESP32   	|
  * |:--------------:|:--------------|
- * | 	PIN_X	 	| 	GPIO_X		|
+ * | 	Vcc 	    |	5V      	|
+ * | 	Echo		| 	GPIO_3		|
+ * | 	Trig	 	| 	GPIO_2		|
+ * | 	Gnd 	    | 	GND     	|
  *
+ * | Módulo Bluetooth |      ESP32    |
+ * |:----------------:|:--------------|
+ * | 	Tx		      | 	GPIO_18	  |
+ * | 	Rx	 	      | 	GPIO_19	  |
+ * | 	Gnd 	      | 	GND    	  |
  *
+ * |    Buzzer      |   ESP32   	|
+ * |:--------------:|:--------------|
+ * | 	Señal		| 	GPIO_1		|
+ * | 	Gnd 	    | 	GND     	|
+ * 
  * @section changelog Changelog
  *
  * |   Date	    | Description                                    |
