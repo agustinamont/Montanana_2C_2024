@@ -28,6 +28,12 @@
  * | 	Señal		| 	GPIO_1		|
  * | 	Gnd 	    | 	GND     	|
  * 
+ * | Acelerómetro   |   ESP32   	|
+ * |:--------------:|:--------------|
+ * | 	Canal X		| 	CH1 		|
+ * | 	Canal Y		| 	CH2 		|
+ * | 	Canal Z		| 	CH3 		|
+ * 
  * @section changelog Changelog
  *
  * |   Date	    | Description                                    |
