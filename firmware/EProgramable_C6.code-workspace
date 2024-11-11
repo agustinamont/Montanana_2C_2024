@@ -23,6 +23,9 @@
         },
         {
             "path": "projects/examen"
+        },
+        {
+            "path": "projects/recuperatorio"
         }
     ],
     "settings": {
